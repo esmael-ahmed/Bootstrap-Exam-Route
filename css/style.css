@@ -1,0 +1,631 @@
+:root {
+    --dark-bg-color: #1C1C1C;
+}
+
+
+
+.navbar {
+    background-color: white !important;
+}
+
+.navbar .navbar-nav .nav-link,
+.navbar .navbar-brand {
+    color: black !important;
+}
+
+.navbar .navbar-toggler {
+    color: black;
+    border: none !important;
+}
+
+.navbar .navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.navbar .navbar-nav .nav-link.active {
+    position: relative;
+}
+
+.navbar .navbar-nav .nav-link.active::after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 2px;
+    bottom: 12px;
+    left: 50%;
+    background-color: var(--dark-bg-color);
+    transform: translateX(-50%);
+}
+
+
+
+
+
+
+/* start header */
+.header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../iamges/header/bg.jpg);
+    background-size: cover;
+    background-position: center;
+    /* background-attachment: fixed; */
+}
+
+.header-media-link {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.3);
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.header h5 {
+    font-size: 3.125rem;
+    font-weight: 800;
+}
+
+.header h1 {
+    font-size: 3.75rem;
+    font-weight: 200;
+}
+
+/* end header */
+/*/////////////////////////////////////////////////*/
+
+/* start about */
+.about .progress-bar {
+    display: unset !important;
+    background-color: var(--dark-bg-color) !important;
+}
+
+.about h3 {
+    font-size: 1.875rem !important;
+    font-weight: 800;
+    color: #343434;
+}
+
+.about .progress {
+    height: 27px !important;
+}
+
+.about .left {
+    left: 7px !important;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.about .right {
+    right: 7px !important;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.about .btn-left {
+    background-color: var(--dark-bg-color);
+    color: white !important;
+    transition: all 0.3s;
+}
+
+.about .btn-left:hover {
+    background-color: white;
+    color: black !important;
+}
+
+.about .btn-right {
+    transition: all 0.3s;
+}
+
+.about .btn-right:hover {
+    background-color: var(--dark-bg-color);
+    color: white !important;
+}
+
+
+/* end about */
+/*/////////////////////////////////////////////////*/
+
+
+/* start services */
+.services {
+    background-color: #F7F7F7;
+}
+
+.services h3 {
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: #343434;
+}
+
+.services-icon {
+    width: 70px;
+    height: 70px;
+    background-color: #f4f4f4;
+    transition: all 0.5s
+}
+
+.services-icon svg {
+    font-size: 1.75rem !important;
+    color: #343434;
+    transition: all 0.5s;
+}
+
+.services-item:hover .services-icon {
+    background-color: var(--dark-bg-color) !important;
+}
+
+.services-item:hover .services-icon svg {
+    color: white !important;
+}
+
+.services h6 {
+    font-size: 1.125rem;
+    font-weight: 800;
+    color: #343434;
+}
+
+.services p {
+    font-size: 0.875rem;
+}
+
+/* end services */
+/*//////////////////////////////////////////////////*/
+
+
+/* start portfolio */
+.portfolio h3,
+.testimonials h3,
+.our-team h3,
+.contact h3 {
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: #343434;
+}
+
+.portfolio .nav-pills .nav-link.active {
+    position: relative;
+}
+
+.portfolio .nav-pills .nav-link.active::after {
+    content: "";
+    position: absolute;
+    width: 63%;
+    height: 2px;
+    bottom: 1px;
+    left: 50%;
+    background-color: var(--dark-bg-color);
+    transform: translateX(-50%);
+    /* transition: width 0.7s; */
+}
+
+/* .portfolio .nav-pills .nav-link.active:focus::after {
+    width: 63%;
+} */
+
+.portfolio .nav-link {
+    color: var(--dark-bg-color) !important;
+    font-weight: 700;
+    background-color: unset !important;
+}
+
+.portfolio .overlay {
+    top: 5px;
+    bottom: 5px;
+    right: 17px;
+    left: 17px;
+    z-index: 10;
+    opacity: 0;
+    transition: all 0.8s;
+}
+
+.portofolio-link {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: var(--dark-bg-color);
+    margin: 0 3px;
+    cursor: pointer;
+}
+
+.portofolio-link:hover {
+    background-color: white;
+}
+
+.portofolio-link:hover .portfolio-svg {
+    color: var(--dark-bg-color);
+}
+
+.portfolio-svg {
+    color: white;
+}
+
+.portfolio-item {
+    overflow: hidden;
+}
+
+.portfolio-item::after {
+    content: "";
+    position: absolute;
+    top: 120%;
+    bottom: 5px;
+    right: 17px;
+    left: 17px;
+    background-color: white;
+    transition: all 0.8s;
+}
+
+.portfolio-item:hover::after {
+    top: 5px
+}
+
+.portfolio-item:hover .overlay {
+    opacity: 1;
+}
+
+
+/* end portfolio */
+/*//////////////////////////////////////////////////*/
+
+
+
+
+/* start testimonials  */
+.testimonials {
+    background-color: #F7F7F7;
+}
+
+.testimonials img {
+    width: 100px;
+}
+
+
+.testimonials .carousel-indicators {
+    position: static;
+}
+
+.carousel-indicators [data-bs-target] {
+
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: gray;
+}
+
+/* end testimonials  */
+/*////////////////////////////////////////////////////*/
+
+/*start statistics*/
+.statistics {
+    height: 330px;
+
+}
+
+.statistics .item p {
+    color: #343434 !important;
+    font-size: 1.875rem !important;
+    font-weight: 900 !important;
+}
+
+.statistics svg {
+    color: #343434 !important;
+}
+
+.statistics .item span {
+    color: #748182 !important;
+    font-weight: 600 !important;
+}
+
+.statistics .icon svg {
+    color: black;
+}
+
+/*end statistics*/
+/*////////////////////////////////////////////////////////////*/
+
+/*start our-team*/
+.our-team {
+    background-color: #F7F7F7;
+}
+
+.our-team .card {
+    border-radius: 0 !important;
+    border: none !important;
+    overflow: hidden;
+}
+
+.our-team .card h4 {
+    font-size: 1.562rem;
+    font-weight: 500;
+}
+
+.our-team .card h5 {
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.card-overlay {
+    top: 5px;
+    bottom: 123px;
+    right: 5px;
+    left: 5px;
+    background-color: white;
+    cursor: pointer;
+    transition: all 0.8s;
+    opacity: 0;
+    transform: scale(0.3, 0.3);
+}
+
+.card-linkk {
+    width: 40px !important;
+    height: 40px !important;
+    border-radius: 50% !important;
+    background-color: var(--dark-bg-color);
+    transition: all 0.4s;
+    margin: 0 5px;
+}
+
+.card-svg {
+    color: white;
+    font-size: 1.25rem !important;
+    transition: all 0.4s;
+}
+
+.card-linkk:hover {
+    background-color: white;
+}
+
+.card-linkk:hover .card-svg {
+    color: var(--dark-bg-color);
+}
+
+.card:hover .card-overlay {
+    transform: scale(1, 1) rotatey(360deg);
+    opacity: 1;
+
+}
+
+/* .card:hover .card-img-top {
+    transform: scale(1.2, 1.2);
+}
+
+.card-body {
+    overflow: hidden;
+} */
+
+/* .card-image-container {
+    top: 0px;
+    bottom: 118px;
+    right: 0px;
+    left: 0px;
+    overflow: hidden;
+} */
+
+
+
+/*end our-team*/
+/*////////////////////////////////////////////////////////////*/
+
+
+
+.contact .firstTwo input {
+    width: 49%;
+}
+
+.form-btn {
+    background-color: var(--dark-bg-color);
+    color: #fff;
+}
+
+
+.form-btn:hover {
+    background-color: white;
+    color: var(--dark-bg-color);
+}
+
+textarea {
+    height: 150px;
+}
+
+form .form-control {
+    border: none !important;
+    background-color: #F7F7F7;
+}
+
+form .form-control:focus {
+    box-shadow: none;
+}
+
+
+
+
+@keyframes change-text {
+    1% {
+        content: ' |';
+    }
+    2% {
+        content: 'd |';
+    }
+    3% {
+        content: 'de |';
+    }
+    5% {
+        content: 'dev |';
+    }
+    6% {
+        content: 'deve |';
+    }
+    7% {
+        content: 'devel |';
+    }
+    8% {
+        content: 'develo |';
+    }
+    9% {
+        content: 'develop |';
+    }
+    10% {
+        content: 'develope |';
+    }
+    11% {
+        content: 'developer |';
+    }
+    12% {
+        content: 'develope |';
+    }
+    13% {
+        content: 'develop |';
+    }
+    14% {
+        content: 'develo |';
+    }
+    15% {
+        content: 'devel |';
+    }
+    16% {
+        content: 'deve |';
+    }
+    17% {
+        content: 'dev |';
+    }
+    18% {
+        content: 'de |';
+    }
+    19% {
+        content: 'des |';
+    }
+    20% {
+        content: 'desi |';
+    }
+    21% {
+        content: 'desig |';
+    }
+    22% {
+        content: 'design |';
+    }
+    23% {
+        content: 'designe |';
+    }
+    24% {
+        content: 'designer |';
+    }
+    25% {
+        content: 'designe |';
+    }
+    26% {
+        content: 'design |';
+    }
+    27% {
+        content: 'desig |';
+    }
+    28% {
+        content: 'desi |';
+    }
+    29% {
+        content: 'des |';
+    }
+    30% {
+        content: 'de |';
+    }
+    31% {
+        content: 'd |';
+    }
+    32% {
+        content: 'l |';
+    }
+    34% {
+        content: 'la |';
+    }
+    36% {
+        content: 'lar |';
+    }
+    38% {
+        content: 'larr |';
+    }
+    40% {
+        content: 'larry |';
+    }
+    42% {
+        content: 'larry  |';
+    }
+    44% {
+        content: 'larry D |';
+    }
+    46% {
+        content: 'larry Da |';
+    }
+    48% {
+        content: 'larry Dan |';
+    }
+    50% {
+        content: 'larry Dani |';
+    }
+    53% {
+        content: 'larry Danie |';
+    }
+    55% {
+        content: 'larry Daniel |';
+    }
+    58% {
+        content: 'larry Daniels |';
+    }
+    60% {
+        content: 'larry Daniel |';
+    }
+    64% {
+        content: 'larry Danie |';
+    }
+    68% {
+        content: 'larry Dani |';
+    }
+    70% {
+        content: 'larry Dan |';
+    }
+    74% {
+        content: 'larry Da |';
+    }
+    78% {
+        content: 'larry D |';
+    }
+    80% {
+        content: 'larry  |';
+    }
+    83% {
+        content: 'larry |';
+    }
+    86% {
+        content: 'larr |';
+    }
+    90% {
+        content: 'lar |';
+    }
+    93% {
+        content: 'la |';
+    }
+    96% {
+        content: 'l |';
+    }
+    100% {
+        content: ' |';
+    }
+    
+}
+
+.header h1::after {
+    content: '';
+    animation: change-text 10s linear infinite;
+}
+
+
+footer {
+    background-color: var(--dark-bg-color);
+    height: 80px !important;
+    color: #748182;
+}
+
+.progress {
+    box-shadow: 0 0 3px 3px var(--dark-bg-color) inset;
+}
+
+
+html {
+    scroll-padding-top: 72px;
+}
